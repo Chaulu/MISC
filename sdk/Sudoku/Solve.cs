@@ -8,13 +8,13 @@ namespace Sudoku
 {
     class solve
     {
-        private int[,] Sdk = new int[9, 9];
+        public int[,] Sdk = new int[9, 9];
         //holds the solved matrix
-        private int[,] Soln;
+        public int[,] Soln= new int[9,9];
         //holds matrix for reseting
-        private int[,] Original;
+        private int[,] Original= new int [9,9];
         //Bool value if it contains no or not
-        private bool[,] Asg;
+        private bool[,] Asg= new bool [9,9];
         //class constructor
         public solve()
         {

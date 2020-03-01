@@ -7,3 +7,12 @@ X:\project\Sudoku\Sudoku\bin\Debug\Sudoku.exe
 X:\project\Sudoku\Sudoku\bin\Debug\Sudoku.pdb
 X:\project\Sudoku\Sudoku\obj\Debug\Sudoku.exe
 X:\project\Sudoku\Sudoku\obj\Debug\Sudoku.pdb
+X:\project\Final\MISC\sdk\Sudoku\bin\Debug\Sudoku.exe.config
+X:\project\Final\MISC\sdk\Sudoku\obj\Debug\Sudoku.exe
+X:\project\Final\MISC\sdk\Sudoku\obj\Debug\Sudoku.pdb
+X:\project\Final\MISC\sdk\Sudoku\bin\Debug\Sudoku.exe
+X:\project\Final\MISC\sdk\Sudoku\bin\Debug\Sudoku.pdb
+X:\project\Final\MISC\sdk\Sudoku\obj\Debug\Sudoku.Form1.resources
+X:\project\Final\MISC\sdk\Sudoku\obj\Debug\Sudoku.Properties.Resources.resources
+X:\project\Final\MISC\sdk\Sudoku\obj\Debug\Sudoku.csproj.GenerateResource.Cache
+X:\project\Final\MISC\sdk\Sudoku\obj\Debug\Sudoku.csprojAssemblyReference.cache

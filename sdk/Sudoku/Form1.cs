@@ -18,11 +18,11 @@ namespace Sudoku
 
         #region Methods
 
-        public void btnNew_Click(object sender, EventArgs e)
+        public void BtnNew_Click(object sender, EventArgs e)
         {
             Mat.New();
         }
-        public void btnCheck_Click(object sender, EventArgs e)
+        public void BtnCheck_Click(object sender, EventArgs e)
         {
             if (Mat.Check() == false)
             {
@@ -33,7 +33,7 @@ namespace Sudoku
                 MessageBox.Show("Congratulations.");
             }
         }
-        private void btnRst_Click(object sender, EventArgs e)
+        private void BtnRst_Click(object sender, EventArgs e)
         {
             Mat.Reset();
             MessageBox.Show("The puzzle has been reset");
@@ -46,6 +46,7 @@ namespace Sudoku
             if (Mat.CheckAsg(0, 0) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(0, 0,x);
             }
             else
             {
@@ -60,6 +61,7 @@ namespace Sudoku
             if (Mat.CheckAsg(0, 1) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(0, 1, x);
             }
             else
             {
@@ -73,6 +75,7 @@ namespace Sudoku
             if (Mat.CheckAsg(0, 2) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(0, 2, x);
             }
             else
             {
@@ -86,6 +89,7 @@ namespace Sudoku
             if (Mat.CheckAsg(0, 3) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(0, 3, x);
             }
             else
             {
@@ -99,6 +103,7 @@ namespace Sudoku
             if (Mat.CheckAsg(0, 4) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(0, 4, x);
             }
             else
             {
@@ -112,6 +117,7 @@ namespace Sudoku
             if (Mat.CheckAsg(0, 5) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(0, 5, x);
             }
             else
             {
@@ -125,6 +131,7 @@ namespace Sudoku
             if (Mat.CheckAsg(0, 6) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(0, 6, x);
             }
             else
             {
@@ -138,6 +145,7 @@ namespace Sudoku
             if (Mat.CheckAsg(0, 7) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(0, 7, x);
             }
             else
             {
@@ -151,6 +159,7 @@ namespace Sudoku
             if (Mat.CheckAsg(0, 8) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(0, 8, x);
             }
             else
             {
@@ -165,6 +174,7 @@ namespace Sudoku
             if (Mat.CheckAsg(1, 0) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(1, 0, x);
             }
             else
             {
@@ -179,6 +189,7 @@ namespace Sudoku
             if (Mat.CheckAsg(1, 1) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(1, 1, x);
             }
             else
             {
@@ -193,6 +204,7 @@ namespace Sudoku
             if (Mat.CheckAsg(1, 2) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(1, 2, x);
             }
             else
             {
@@ -207,6 +219,7 @@ namespace Sudoku
             if (Mat.CheckAsg(1, 3) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(1, 3, x);
             }
             else
             {
@@ -220,6 +233,7 @@ namespace Sudoku
             if (Mat.CheckAsg(1, 4) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(1, 4, x);
             }
             else
             {
@@ -233,6 +247,7 @@ namespace Sudoku
             if (Mat.CheckAsg(1, 5) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(1, 5, x);
             }
             else
             {
@@ -247,6 +262,7 @@ namespace Sudoku
             if (Mat.CheckAsg(1, 6) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(1,6, x);
             }
             else
             {
@@ -261,6 +277,7 @@ namespace Sudoku
             if (Mat.CheckAsg(1, 7) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(1, 7, x);
             }
             else
             {
@@ -275,6 +292,7 @@ namespace Sudoku
             if (Mat.CheckAsg(1, 8) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(1, 8, x);
             }
             else
             {
@@ -288,6 +306,7 @@ namespace Sudoku
             if (Mat.CheckAsg(2, 0) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(2, 0, x);
             }
             else
             {
@@ -302,6 +321,7 @@ namespace Sudoku
             if (Mat.CheckAsg(2, 1) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(2, 1, x);
             }
             else
             {
@@ -315,10 +335,11 @@ namespace Sudoku
             if (Mat.CheckAsg(2, 2) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(2, 2, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(2, 3));
+                textBox1.Text = Convert.ToString(Mat.getVal(2, 2));
             }
 
         }
@@ -329,10 +350,11 @@ namespace Sudoku
             if (Mat.CheckAsg(2, 3) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(2, 3, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(2, 4));
+                textBox1.Text = Convert.ToString(Mat.getVal(2, 3));
             }
 
         }
@@ -343,10 +365,11 @@ namespace Sudoku
             if (Mat.CheckAsg(2, 4) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(2, 4, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(2, 5));
+                textBox1.Text = Convert.ToString(Mat.getVal(2, 4));
             }
 
         }
@@ -357,10 +380,11 @@ namespace Sudoku
             if (Mat.CheckAsg(2, 5) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(2, 5, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(2, 6));
+                textBox1.Text = Convert.ToString(Mat.getVal(2, 5));
             }
         }
 
@@ -370,10 +394,11 @@ namespace Sudoku
             if (Mat.CheckAsg(2, 6) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(2, 6, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(2, 7));
+                textBox1.Text = Convert.ToString(Mat.getVal(2, 6));
             }
 
         }
@@ -384,10 +409,11 @@ namespace Sudoku
             if (Mat.CheckAsg(2, 7) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(2, 7, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(2, 8));
+                textBox1.Text = Convert.ToString(Mat.getVal(2, 7));
             }
 
         }
@@ -398,10 +424,11 @@ namespace Sudoku
             if (Mat.CheckAsg(2, 8) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(2, 8, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(3, 0));
+                textBox1.Text = Convert.ToString(Mat.getVal(2, 8));
             }
 
         }
@@ -412,10 +439,11 @@ namespace Sudoku
             if (Mat.CheckAsg(3, 0) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(3, 0, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(3, 1));
+                textBox1.Text = Convert.ToString(Mat.getVal(3, 0));
             }
 
         }
@@ -426,10 +454,11 @@ namespace Sudoku
             if (Mat.CheckAsg(3, 1) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(3, 1, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(3, 2));
+                textBox1.Text = Convert.ToString(Mat.getVal(3, 1));
             }
 
         }
@@ -440,10 +469,11 @@ namespace Sudoku
             if (Mat.CheckAsg(3, 2) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(3, 2, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(3, 3));
+                textBox1.Text = Convert.ToString(Mat.getVal(3, 2));
             }
 
         }
@@ -454,10 +484,11 @@ namespace Sudoku
             if (Mat.CheckAsg(3, 3) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(3, 3, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(3, 4));
+                textBox1.Text = Convert.ToString(Mat.getVal(3, 3));
             }
         }
 
@@ -467,10 +498,11 @@ namespace Sudoku
             if (Mat.CheckAsg(3, 4) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(3, 4, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(3, 5));
+                textBox1.Text = Convert.ToString(Mat.getVal(3, 4));
             }
 
         }
@@ -481,10 +513,11 @@ namespace Sudoku
             if (Mat.CheckAsg(3, 5) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(3, 5, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(3, 6));
+                textBox1.Text = Convert.ToString(Mat.getVal(3, 5));
             }
         }
 
@@ -494,10 +527,11 @@ namespace Sudoku
             if (Mat.CheckAsg(3, 6) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(3, 6, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(3, 7));
+                textBox1.Text = Convert.ToString(Mat.getVal(3, 6));
             }
         }
 
@@ -507,10 +541,11 @@ namespace Sudoku
             if (Mat.CheckAsg(3, 7) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(3, 7, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(3, 8));
+                textBox1.Text = Convert.ToString(Mat.getVal(3, 7));
             }
 
         }
@@ -521,10 +556,11 @@ namespace Sudoku
             if (Mat.CheckAsg(3, 8) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(3, 8, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(4, 0));
+                textBox1.Text = Convert.ToString(Mat.getVal(3, 8));
             }
 
         }
@@ -535,10 +571,11 @@ namespace Sudoku
             if (Mat.CheckAsg(4, 0) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(4, 0, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(4, 1));
+                textBox1.Text = Convert.ToString(Mat.getVal(4, 0));
             }
         }
 
@@ -548,10 +585,11 @@ namespace Sudoku
             if (Mat.CheckAsg(4, 1) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(4, 1, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(4, 2));
+                textBox1.Text = Convert.ToString(Mat.getVal(4, 1));
             }
 
         }
@@ -562,10 +600,11 @@ namespace Sudoku
             if (Mat.CheckAsg(4, 2) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(4, 2, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(4, 3));
+                textBox1.Text = Convert.ToString(Mat.getVal(4, 2));
             }
         }
 
@@ -575,10 +614,11 @@ namespace Sudoku
             if (Mat.CheckAsg(4, 3) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(4, 3, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(4, 4));
+                textBox1.Text = Convert.ToString(Mat.getVal(4, 3));
             }
         }
 
@@ -588,10 +628,11 @@ namespace Sudoku
             if (Mat.CheckAsg(4, 4) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(4, 4, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(4, 5));
+                textBox1.Text = Convert.ToString(Mat.getVal(4, 4));
             }
 
         }
@@ -602,10 +643,11 @@ namespace Sudoku
             if (Mat.CheckAsg(4, 5) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(4, 5, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(4, 6));
+                textBox1.Text = Convert.ToString(Mat.getVal(4, 5));
             }
 
         }
@@ -616,10 +658,11 @@ namespace Sudoku
             if (Mat.CheckAsg(4, 6) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(4, 6, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(4, 7));
+                textBox1.Text = Convert.ToString(Mat.getVal(4, 6));
             }
         }
 
@@ -629,10 +672,11 @@ namespace Sudoku
             if (Mat.CheckAsg(4, 7) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(4, 7, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(4, 8));
+                textBox1.Text = Convert.ToString(Mat.getVal(4, 7));
             }
         }
 
@@ -642,10 +686,11 @@ namespace Sudoku
             if (Mat.CheckAsg(4, 8) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(4, 8, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(5, 0));
+                textBox1.Text = Convert.ToString(Mat.getVal(4, 8));
             }
 
         }
@@ -656,10 +701,11 @@ namespace Sudoku
             if (Mat.CheckAsg(5, 0) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(5, 0, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(5, 1));
+                textBox1.Text = Convert.ToString(Mat.getVal(5, 0));
             }
 
         }
@@ -670,10 +716,11 @@ namespace Sudoku
             if (Mat.CheckAsg(5, 1) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(5, 1, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(5, 2));
+                textBox1.Text = Convert.ToString(Mat.getVal(5, 1));
             }
         }
 
@@ -683,10 +730,11 @@ namespace Sudoku
             if (Mat.CheckAsg(5, 2) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(5, 2, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(5, 3));
+                textBox1.Text = Convert.ToString(Mat.getVal(5, 2));
             }
 
         }
@@ -697,10 +745,11 @@ namespace Sudoku
             if (Mat.CheckAsg(5, 3) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(5, 3, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(5, 4));
+                textBox1.Text = Convert.ToString(Mat.getVal(5, 3));
             }
         }
 
@@ -710,10 +759,11 @@ namespace Sudoku
             if (Mat.CheckAsg(5, 4) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(5, 4, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(5, 5));
+                textBox1.Text = Convert.ToString(Mat.getVal(5, 4));
             }
 
         }
@@ -724,10 +774,11 @@ namespace Sudoku
             if (Mat.CheckAsg(5, 5) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(5, 5, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(5, 6));
+                textBox1.Text = Convert.ToString(Mat.getVal(5, 5));
             }
 
         }
@@ -738,10 +789,11 @@ namespace Sudoku
             if (Mat.CheckAsg(5, 6) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(5, 6, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(5, 7));
+                textBox1.Text = Convert.ToString(Mat.getVal(5, 6));
             }
 
         }
@@ -752,10 +804,11 @@ namespace Sudoku
             if (Mat.CheckAsg(5, 7) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(5, 7, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(5, 8));
+                textBox1.Text = Convert.ToString(Mat.getVal(5, 7));
             }
         }
 
@@ -765,10 +818,11 @@ namespace Sudoku
             if (Mat.CheckAsg(5, 8) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(5, 8, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(6, 0));
+                textBox1.Text = Convert.ToString(Mat.getVal(5, 8));
             }
         }
 
@@ -778,10 +832,11 @@ namespace Sudoku
             if (Mat.CheckAsg(6, 0) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(6, 0, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(6, 1));
+                textBox1.Text = Convert.ToString(Mat.getVal(6, 0));
             }
 
         }
@@ -792,10 +847,11 @@ namespace Sudoku
             if (Mat.CheckAsg(6, 1) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(6, 1, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(6, 2));
+                textBox1.Text = Convert.ToString(Mat.getVal(6, 1));
             }
 
         }
@@ -806,10 +862,11 @@ namespace Sudoku
             if (Mat.CheckAsg(6, 2) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(6, 2, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(6, 3));
+                textBox1.Text = Convert.ToString(Mat.getVal(6, 2));
             }
 
         }
@@ -820,10 +877,11 @@ namespace Sudoku
             if (Mat.CheckAsg(6, 3) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(6, 3, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(6, 4));
+                textBox1.Text = Convert.ToString(Mat.getVal(6, 3));
             }
         }
 
@@ -833,10 +891,11 @@ namespace Sudoku
             if (Mat.CheckAsg(6, 4) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(6, 4, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(6, 5));
+                textBox1.Text = Convert.ToString(Mat.getVal(6, 4));
             }
 
         }
@@ -847,10 +906,11 @@ namespace Sudoku
             if (Mat.CheckAsg(6, 5) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(6, 5, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(6, 6));
+                textBox1.Text = Convert.ToString(Mat.getVal(6, 5));
             }
         }
 
@@ -860,10 +920,11 @@ namespace Sudoku
             if (Mat.CheckAsg(6, 6) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(6, 6, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(6, 7));
+                textBox1.Text = Convert.ToString(Mat.getVal(6, 6));
             }
         }
 
@@ -873,10 +934,11 @@ namespace Sudoku
             if (Mat.CheckAsg(6, 7) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(6, 7, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(6, 8));
+                textBox1.Text = Convert.ToString(Mat.getVal(6, 7));
             }
 
         }
@@ -887,10 +949,11 @@ namespace Sudoku
             if (Mat.CheckAsg(6, 8) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(6, 8, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(7, 0));
+                textBox1.Text = Convert.ToString(Mat.getVal(6, 8));
             }
 
         }
@@ -901,10 +964,11 @@ namespace Sudoku
             if (Mat.CheckAsg(7, 0) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(7, 0, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(7, 1));
+                textBox1.Text = Convert.ToString(Mat.getVal(7, 0));
             }
 
         }
@@ -915,10 +979,11 @@ namespace Sudoku
             if (Mat.CheckAsg(7, 1) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(7, 1, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(7, 2));
+                textBox1.Text = Convert.ToString(Mat.getVal(7, 1));
             }
 
         }
@@ -929,10 +994,11 @@ namespace Sudoku
             if (Mat.CheckAsg(7, 2) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(7, 2, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(7, 3));
+                textBox1.Text = Convert.ToString(Mat.getVal(7, 2));
             }
 
         }
@@ -943,10 +1009,11 @@ namespace Sudoku
             if (Mat.CheckAsg(7, 3) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(7, 3, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(7, 4));
+                textBox1.Text = Convert.ToString(Mat.getVal(7, 3));
             }
 
         }
@@ -957,10 +1024,11 @@ namespace Sudoku
             if (Mat.CheckAsg(7, 4) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(7, 4, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(7, 5));
+                textBox1.Text = Convert.ToString(Mat.getVal(7, 4));
             }
 
         }
@@ -971,10 +1039,11 @@ namespace Sudoku
             if (Mat.CheckAsg(7, 5) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(7, 5, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(7, 6));
+                textBox1.Text = Convert.ToString(Mat.getVal(7, 5));
             }
 
         }
@@ -985,10 +1054,11 @@ namespace Sudoku
             if (Mat.CheckAsg(7,6) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(7, 6, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(7, 7));
+                textBox1.Text = Convert.ToString(Mat.getVal(7, 6));
             }
 
         }
@@ -999,10 +1069,11 @@ namespace Sudoku
             if (Mat.CheckAsg(7, 7) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(7, 7, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(7, 8));
+                textBox1.Text = Convert.ToString(Mat.getVal(7, 7));
             }
 
         }
@@ -1013,10 +1084,11 @@ namespace Sudoku
             if (Mat.CheckAsg(7, 8) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(7, 8, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(8, 0));
+                textBox1.Text = Convert.ToString(Mat.getVal(7, 8));
             }
 
         }
@@ -1027,10 +1099,11 @@ namespace Sudoku
             if (Mat.CheckAsg(8, 0) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(8, 0, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(8, 1));
+                textBox1.Text = Convert.ToString(Mat.getVal(8, 0));
             }
         }
 
@@ -1040,10 +1113,11 @@ namespace Sudoku
             if (Mat.CheckAsg(8, 1) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(8, 1, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(8, 2));
+                textBox1.Text = Convert.ToString(Mat.getVal(8, 1));
             }
 
         }
@@ -1054,10 +1128,11 @@ namespace Sudoku
             if (Mat.CheckAsg(8, 2) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(8, 2, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(8, 3));
+                textBox1.Text = Convert.ToString(Mat.getVal(8, 2));
             }
 
         }
@@ -1068,10 +1143,11 @@ namespace Sudoku
             if (Mat.CheckAsg(8, 3) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(8, 3, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(8, 4));
+                textBox1.Text = Convert.ToString(Mat.getVal(8, 3));
             }
         }
 
@@ -1081,10 +1157,11 @@ namespace Sudoku
             if (Mat.CheckAsg(8, 4) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(8, 4, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(8, 5));
+                textBox1.Text = Convert.ToString(Mat.getVal(8, 4));
             }
 
         }
@@ -1095,10 +1172,11 @@ namespace Sudoku
             if (Mat.CheckAsg(8, 5) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(8, 5, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(8, 6));
+                textBox1.Text = Convert.ToString(Mat.getVal(8, 5));
             }
 
         }
@@ -1109,10 +1187,11 @@ namespace Sudoku
             if (Mat.CheckAsg(8, 6) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(8, 6, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(8, 7));
+                textBox1.Text = Convert.ToString(Mat.getVal(8, 6));
             }
 
         }
@@ -1123,10 +1202,11 @@ namespace Sudoku
             if (Mat.CheckAsg(8, 7) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(8, 7, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(8, 8));
+                textBox1.Text = Convert.ToString(Mat.getVal(8, 7));
             }
 
         }
@@ -1137,14 +1217,20 @@ namespace Sudoku
             if (Mat.CheckAsg(8, 8) == false)
             {
                 x = Convert.ToInt32(textBox1.Text);
+                Mat.setVal(8, 8, x);
             }
             else
             {
-                textBox1.Text = Convert.ToString(Mat.getVal(0, 0));
+                textBox1.Text = Convert.ToString(Mat.getVal(8, 8));
             }
 
         }
 
         #endregion
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnNew = new System.Windows.Forms.Button();
+            this.BtnNew = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -110,19 +110,19 @@
             this.textBox79 = new System.Windows.Forms.TextBox();
             this.textBox80 = new System.Windows.Forms.TextBox();
             this.textBox81 = new System.Windows.Forms.TextBox();
-            this.btnRst = new System.Windows.Forms.Button();
-            this.btnCheck = new System.Windows.Forms.Button();
+            this.BtnRst = new System.Windows.Forms.Button();
+            this.BtnCheck = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnNew
+            // BtnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(12, 24);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(75, 23);
-            this.btnNew.TabIndex = 0;
-            this.btnNew.Text = "New";
-            this.btnNew.UseVisualStyleBackColor = true;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            this.BtnNew.Location = new System.Drawing.Point(12, 24);
+            this.BtnNew.Name = "BtnNew";
+            this.BtnNew.Size = new System.Drawing.Size(75, 23);
+            this.BtnNew.TabIndex = 0;
+            this.BtnNew.Text = "New";
+            this.BtnNew.UseVisualStyleBackColor = true;
+            this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
             // 
             // textBox1
             // 
@@ -772,33 +772,33 @@
             this.textBox81.TabIndex = 81;
             this.textBox81.TextChanged += new System.EventHandler(this.textBox81_TextChanged);
             // 
-            // btnRst
+            // BtnRst
             // 
-            this.btnRst.Location = new System.Drawing.Point(12, 309);
-            this.btnRst.Name = "btnRst";
-            this.btnRst.Size = new System.Drawing.Size(75, 23);
-            this.btnRst.TabIndex = 82;
-            this.btnRst.Text = "Reset";
-            this.btnRst.UseVisualStyleBackColor = true;
-            this.btnRst.Click += new System.EventHandler(this.btnRst_Click);
+            this.BtnRst.Location = new System.Drawing.Point(12, 309);
+            this.BtnRst.Name = "BtnRst";
+            this.BtnRst.Size = new System.Drawing.Size(75, 23);
+            this.BtnRst.TabIndex = 82;
+            this.BtnRst.Text = "Reset";
+            this.BtnRst.UseVisualStyleBackColor = true;
+            this.BtnRst.Click += new System.EventHandler(this.BtnRst_Click);
             // 
-            // btnCheck
+            // BtnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(165, 309);
-            this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(75, 23);
-            this.btnCheck.TabIndex = 83;
-            this.btnCheck.Text = "Check";
-            this.btnCheck.UseVisualStyleBackColor = true;
-            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            this.BtnCheck.Location = new System.Drawing.Point(165, 309);
+            this.BtnCheck.Name = "BtnCheck";
+            this.BtnCheck.Size = new System.Drawing.Size(75, 23);
+            this.BtnCheck.TabIndex = 83;
+            this.BtnCheck.Text = "Check";
+            this.BtnCheck.UseVisualStyleBackColor = true;
+            this.BtnCheck.Click += new System.EventHandler(this.BtnCheck_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(254, 344);
-            this.Controls.Add(this.btnCheck);
-            this.Controls.Add(this.btnRst);
+            this.Controls.Add(this.BtnCheck);
+            this.Controls.Add(this.BtnRst);
             this.Controls.Add(this.textBox81);
             this.Controls.Add(this.textBox80);
             this.Controls.Add(this.textBox79);
@@ -880,9 +880,10 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnNew);
+            this.Controls.Add(this.BtnNew);
             this.Name = "Form1";
             this.Text = "Sudoku";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -890,7 +891,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Button BtnNew;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -972,8 +973,8 @@
         private System.Windows.Forms.TextBox textBox79;
         private System.Windows.Forms.TextBox textBox80;
         private System.Windows.Forms.TextBox textBox81;
-        private System.Windows.Forms.Button btnRst;
-        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Button BtnRst;
+        private System.Windows.Forms.Button BtnCheck;
     }
 }
 
