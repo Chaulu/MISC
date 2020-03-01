@@ -13,6 +13,7 @@ namespace Sudoku
     public Form1()
         {
             InitializeComponent();
+            Mat.New();
         }
         #endregion
 
@@ -1227,10 +1228,5 @@ namespace Sudoku
         }
 
         #endregion
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
